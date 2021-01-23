@@ -8,7 +8,13 @@ image = imresize(image, 0.1);
 result = dehaze(image, 0.95, 15);
 toc;
 
-figure, imshow(image)
-figure, imshow(result)
+% figure, imshow(image)
+% figure, imshow(result)
+
+figure;
+subplot(2, 1, 1);
+imshow(image);
+subplot(2, 1, 2);
+imshow(result);
 
 warning('on','all');
